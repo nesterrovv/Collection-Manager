@@ -1,0 +1,3 @@
+info
+info
+execute_script script1.txt
