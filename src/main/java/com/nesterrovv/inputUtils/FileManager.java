@@ -24,7 +24,7 @@ public class FileManager {
     public static boolean validatePerson(Person person) {
         if (person.getId() == null) return false;
         if (person.getId() <= 0) return false;
-        // TODO if person.getId() not unique
+        if (!IDGenerator.checkIfIDUnique(person.getId())) return false;
         if (person.getName() == null) return false;
         if (person.getCoordinates() == null) return false;
         if (person.getCoordinates().getX() > 690) return false;
