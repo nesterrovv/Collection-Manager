@@ -7,7 +7,7 @@ import com.nesterrovv.serializers.PersonSerializer;
 
 public class UpdateCommand implements TwoArgsCommand {
 
-    private UpdateAction updateAction;
+    private final UpdateAction updateAction;
 
     public UpdateCommand(UpdateAction updateAction) {
         this.updateAction = updateAction;

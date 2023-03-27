@@ -5,7 +5,7 @@ import com.nesterrovv.commands.interfaces.OneArgCommand;
 
 public class RemoveByIDCommand implements OneArgCommand {
 
-    private RemoveByIDAction removeByIDAction;
+    private final RemoveByIDAction removeByIDAction;
 
     public RemoveByIDCommand(RemoveByIDAction removeByIDAction) {
         this.removeByIDAction = removeByIDAction;

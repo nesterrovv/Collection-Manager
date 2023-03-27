@@ -6,7 +6,7 @@ import com.nesterrovv.data.Country;
 
 public class CountGreaterThanNationalityCommand implements OneArgCommand {
 
-    private CountGreaterThanNationalityAction countGreaterThanNationalityAction;
+    private final CountGreaterThanNationalityAction countGreaterThanNationalityAction;
 
     public CountGreaterThanNationalityCommand(CountGreaterThanNationalityAction countGreaterThanNationalityAction) {
         this.countGreaterThanNationalityAction = countGreaterThanNationalityAction;

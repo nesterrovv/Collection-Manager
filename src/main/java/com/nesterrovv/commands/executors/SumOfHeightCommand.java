@@ -5,7 +5,7 @@ import com.nesterrovv.commands.interfaces.NoArgsCommand;
 
 public class SumOfHeightCommand implements NoArgsCommand {
 
-    private SumOfHeightAction sumOfHeightAction;
+    private final SumOfHeightAction sumOfHeightAction;
 
     public SumOfHeightCommand(SumOfHeightAction sumOfHeightAction) {
         this.sumOfHeightAction = sumOfHeightAction;

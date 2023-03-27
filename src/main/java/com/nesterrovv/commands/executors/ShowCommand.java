@@ -5,7 +5,7 @@ import com.nesterrovv.commands.interfaces.NoArgsCommand;
 
 public class ShowCommand implements NoArgsCommand {
 
-    private ShowAction showAction;
+    private final ShowAction showAction;
 
     public ShowCommand(ShowAction showAction) {
         this.showAction = showAction;

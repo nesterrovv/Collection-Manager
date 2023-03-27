@@ -5,7 +5,7 @@ import com.nesterrovv.commands.interfaces.OneArgCommand;
 
 public class ExecuteScriptCommand implements OneArgCommand {
 
-    private ExecuteScriptAction executeScriptAction;
+    private final ExecuteScriptAction executeScriptAction;
 
     public ExecuteScriptCommand(ExecuteScriptAction executeScriptAction) {
         this.executeScriptAction = executeScriptAction;

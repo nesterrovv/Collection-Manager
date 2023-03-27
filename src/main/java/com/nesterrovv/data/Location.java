@@ -1,6 +1,7 @@
 package com.nesterrovv.data;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Location
         implements Serializable, Comparable<Location> {
@@ -50,7 +51,7 @@ public class Location
 
         if (Double.compare(location.x, x) != 0) return false;
         if (Float.compare(location.y, y) != 0) return false;
-        return name != null ? name.equals(location.name) : location.name == null;
+        return Objects.equals(name, location.name);
     }
 
     @Override
@@ -59,7 +60,7 @@ public class Location
         long temp;
         temp = Double.doubleToLongBits(x);
         result = (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (y != +0.0f ? Float.floatToIntBits(y) : 0);
+        result = 31 * result + (y != 0.0f ? Float.floatToIntBits(y) : 0);
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }

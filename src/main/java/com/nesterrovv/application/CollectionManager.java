@@ -5,16 +5,15 @@ import com.nesterrovv.inputUtils.FileManager;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class CollectionManager<S> {
+public class CollectionManager {
 
     private static CollectionManager INSTANCE;
     private Set<Person> collection;
     private final LocalDateTime collectionInitializationTime;
-    private Map<String, String> tutorial;
+    private final Map<String, String> tutorial;
 
     public static CollectionManager getInstance(String pathToCollection) {
         if (INSTANCE == null) {

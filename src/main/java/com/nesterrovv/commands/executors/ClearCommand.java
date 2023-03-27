@@ -5,7 +5,7 @@ import com.nesterrovv.commands.interfaces.NoArgsCommand;
 
 public class ClearCommand implements NoArgsCommand {
 
-    private ClearAction clearAction;
+    private final ClearAction clearAction;
 
     public ClearCommand(ClearAction clearAction) {
         this.clearAction = clearAction;

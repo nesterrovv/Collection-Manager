@@ -2,15 +2,11 @@ package com.nesterrovv.inputUtils;
 
 import com.nesterrovv.data.Person;
 import com.nesterrovv.serializers.CollectionSerializer;
-import com.nesterrovv.wrappers.PersonsHashSet;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 

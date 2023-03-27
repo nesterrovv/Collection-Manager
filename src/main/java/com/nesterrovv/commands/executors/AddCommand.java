@@ -7,7 +7,7 @@ import com.nesterrovv.serializers.PersonSerializer;
 
 public class AddCommand implements OneArgCommand {
 
-    private AddAction addAction;
+    private final AddAction addAction;
 
     public AddCommand(AddAction addAction) {
         this.addAction = addAction;

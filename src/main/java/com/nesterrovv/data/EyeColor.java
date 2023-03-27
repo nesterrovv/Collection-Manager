@@ -7,7 +7,7 @@ public enum EyeColor {
 
     private final String stringRepresentation;
 
-    private EyeColor(String stringRepresentation) {
+    EyeColor(String stringRepresentation) {
         this.stringRepresentation = stringRepresentation;
     }
 

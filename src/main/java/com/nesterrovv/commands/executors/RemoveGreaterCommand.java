@@ -7,7 +7,7 @@ import com.nesterrovv.serializers.PersonSerializer;
 
 public class RemoveGreaterCommand implements OneArgCommand {
 
-    private RemoveGreaterAction removeGreaterAction;
+    private final RemoveGreaterAction removeGreaterAction;
 
     public RemoveGreaterCommand(RemoveGreaterAction removeGreaterAction) {
         this.removeGreaterAction = removeGreaterAction;

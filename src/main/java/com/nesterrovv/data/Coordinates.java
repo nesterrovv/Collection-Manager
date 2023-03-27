@@ -61,7 +61,9 @@ public class Coordinates
     }
 
     public int compareTo(Coordinates another) {
-        if (Math.pow(this.x, 2) + Math.pow(this.y, 2) - Math.pow(another.x, 2) + Math.pow(another.y, 2) > 0) {
+        double sumOfSquaredCoordinates =
+                Math.pow(this.x, 2) + Math.pow(this.y, 2) - Math.pow(another.x, 2) + Math.pow(another.y, 2);
+        if (sumOfSquaredCoordinates > 0) {
             return 1;
         } else if (Math.pow(this.x, 2) + Math.pow(this.y, 2) - Math.pow(another.x, 2) + Math.pow(another.y, 2) < 0) {
             return -1;

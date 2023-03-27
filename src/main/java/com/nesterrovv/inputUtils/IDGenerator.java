@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class IDGenerator {
 
-    private static Set<Long> IDs = new LinkedHashSet<>();
+    private static final Set<Long> IDs = new LinkedHashSet<>();
 
     private IDGenerator() {}
 

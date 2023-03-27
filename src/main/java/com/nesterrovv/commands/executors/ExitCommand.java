@@ -5,7 +5,7 @@ import com.nesterrovv.commands.interfaces.NoArgsCommand;
 
 public class ExitCommand implements NoArgsCommand {
 
-    private ExitAction exitAction;
+    private final ExitAction exitAction;
 
     public ExitCommand(ExitAction exitAction) {
         this.exitAction = exitAction;

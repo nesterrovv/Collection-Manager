@@ -5,7 +5,7 @@ import com.nesterrovv.commands.interfaces.NoArgsCommand;
 
 public class InfoCommand implements NoArgsCommand {
 
-    private InfoAction infoAction;
+    private final InfoAction infoAction;
 
     public InfoCommand(InfoAction infoAction) {
         this.infoAction = infoAction;

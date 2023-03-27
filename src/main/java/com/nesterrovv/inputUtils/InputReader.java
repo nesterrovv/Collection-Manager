@@ -299,7 +299,7 @@ public class InputReader {
     }
 
     public Person receivePerson() {
-        return new Person.PersonBuilder(this.collectionManager)
+        return new Person.PersonBuilder()
                 .id()
                 .name(receiveName())
                 .coordinates(receiveCoordinates())

@@ -5,7 +5,7 @@ import com.nesterrovv.commands.interfaces.NoArgsCommand;
 
 public class GroupCountingByNationalityCommand implements NoArgsCommand {
 
-    private GroupCountingByNationalityAction groupCountingByNationalityAction;
+    private final GroupCountingByNationalityAction groupCountingByNationalityAction;
 
     public GroupCountingByNationalityCommand(GroupCountingByNationalityAction groupCountingByNationalityAction) {
         this.groupCountingByNationalityAction = groupCountingByNationalityAction;

@@ -16,7 +16,7 @@ import java.util.Set;
 public class ExecuteScriptAction {
 
     private final CollectionManager collectionManager;
-    private static Set<String> callStack = new LinkedHashSet<>();
+    private static final Set<String> callStack = new LinkedHashSet<>();
 
 
     public ExecuteScriptAction(CollectionManager collectionManager) {

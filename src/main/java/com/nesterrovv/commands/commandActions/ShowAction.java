@@ -6,7 +6,6 @@ import com.nesterrovv.data.Person;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 
 public class ShowAction {
 
@@ -18,7 +17,7 @@ public class ShowAction {
 
     public String doAction() {
         StringBuilder stringBuilder = new StringBuilder();
-        List<Person> collectionCopy = new ArrayList<Person>(collectionManager.getCollection());
+        List<Person> collectionCopy = new ArrayList<>(collectionManager.getCollection());
         Collections.sort(collectionCopy);
         stringBuilder.append("Collection content:").append("\n");
         for (Person person : collectionCopy) {

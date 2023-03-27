@@ -7,7 +7,7 @@ import com.nesterrovv.serializers.PersonSerializer;
 
 public class AddIfMinCommand implements OneArgCommand {
 
-    private AddIfMinAction addIfMinAction;
+    private final AddIfMinAction addIfMinAction;
 
     public AddIfMinCommand(AddIfMinAction addIfMinAction) {
         this.addIfMinAction = addIfMinAction;

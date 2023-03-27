@@ -182,7 +182,6 @@ public class Person
     }
 
     public static class PersonBuilder {
-        private CollectionManager collectionManager;
         private Long idBuilder;                        // not null, unique, auto-generated, greater then 0
         private String nameBuilder;                    // not null, not empty
         private Coordinates coordinatesBuilder;        // not null
@@ -193,12 +192,6 @@ public class Person
         private Country nationalityBuilder;            // not null
         private Location locationBuilder;              // not null
 
-        //Конструктор с обязательными параметрами
-        public PersonBuilder(CollectionManager collectionManager) {
-            this.collectionManager = collectionManager;
-        }
-
-        //Методы с возвращающим типом Builder для необязательного параметра с, d, e, f,
         public PersonBuilder id() {
             this.idBuilder = IDGenerator.generateID();
             return this;
@@ -224,7 +217,6 @@ public class Person
             return this;
         }
 
-        //Метод с возвращающим типом Good для генерации объекта
         public PersonBuilder eyeColor(EyeColor eyeColor) {
             this.eyeColorBuilder = eyeColor;
             return this;

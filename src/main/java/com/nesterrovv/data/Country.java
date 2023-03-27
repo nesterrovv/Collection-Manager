@@ -11,7 +11,7 @@ public enum Country
 
     private final String stringRepresentation;
 
-    private Country(String stringRepresentation) {
+    Country(String stringRepresentation) {
         this.stringRepresentation = stringRepresentation;
     }
 

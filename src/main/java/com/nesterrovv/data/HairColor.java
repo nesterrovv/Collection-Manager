@@ -7,7 +7,7 @@ public enum HairColor {
 
     private final String stringRepresentation;
 
-    private HairColor(String stringRepresentation) {
+    HairColor(String stringRepresentation) {
         this.stringRepresentation = stringRepresentation;
     }
 
